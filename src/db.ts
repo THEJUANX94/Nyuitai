@@ -1,5 +1,5 @@
 import { DataSource } from "typeorm";
-import { people } from './models/People'
+import { People } from './models/People'
 import { users } from './models/User'
 
 
@@ -17,5 +17,5 @@ export const appDataSource = new DataSource({
             rejectUnauthorized: false
         },
     },
-    entities: [users, people]
+    entities: [users, People]
 })
